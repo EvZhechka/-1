@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Контакты и форма обратной связи МеталлПро">
+  <title>Контакты — МеталлПро</title>
+  <link rel="icon" href="images/hero.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">Металл<span>Про</span></a>
+      <nav class="nav" id="nav" aria-label="Главное меню">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">Главная</a></li>
+          <li><a class="nav__link" href="services.html">Услуги</a></li>
+          <li><a class="nav__link" href="portfolio.html">Портфолио</a></li>
+          <li><a class="nav__link" href="about.html">О компании</a></li>
+          <li><a class="nav__link active" href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <a href="tel:+375291234567" class="header__phone">+375 (29) 123-45-67</a>
+      <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-head"><div class="container"><h1>Контакты</h1><p>Оставьте заявку — перезвоним в течение 15 минут в рабочее время</p></div></div>
+    <section class="section">
+      <div class="container contacts">
+        <div class="info-box">
+          <h2>Свяжитесь с нами</h2>
+          <p><strong>Телефон:</strong><br><a href="tel:+375291234567">+375 (29) 123-45-67</a></p>
+          <p><strong>E-mail:</strong><br><a href="mailto:info@metallpro.by">info@metallpro.by</a></p>
+          <p><strong>Адрес:</strong><br>г. Минск, ул. Заводская, 15</p>
+          <p><strong>Режим работы:</strong><br>Пн–Сб: 9:00–19:00, Вс — выходной</p>
+        </div>
+
+        <form class="form" id="contact-form" novalidate>
+          <h2>Обратная связь</h2>
+          <div class="form__group">
+            <label for="name">Ваше имя *</label>
+            <input type="text" id="name" name="name" placeholder="Иван" autocomplete="name" required>
+            <div class="form__error"></div>
+          </div>
+          <div class="form__group">
+            <label for="phone">Телефон *</label>
+            <input type="tel" id="phone" name="phone" placeholder="+375 (29) 123-45-67" autocomplete="tel" required>
+            <div class="form__error"></div>
+          </div>
+          <div class="form__group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="you@mail.by" autocomplete="email">
+            <div class="form__error"></div>
+          </div>
+          <div class="form__group">
+            <label for="service">Услуга *</label>
+            <select id="service" name="service" required>
+              <option value="">— выберите —</option>
+              <option>Распашные ворота</option>
+              <option>Откатные ворота</option>
+              <option>Теневой навес</option>
+              <option>Ограждения и перила</option>
+              <option>Козырёк</option>
+              <option>Художественная ковка</option>
+              <option>Другое</option>
+            </select>
+            <div class="form__error"></div>
+          </div>
+          <div class="form__group">
+            <label for="message">Сообщение *</label>
+            <textarea id="message" name="message" placeholder="Опишите, что нужно изготовить, размеры, адрес" required></textarea>
+            <div class="form__error"></div>
+          </div>
+          <div class="form__group">
+            <div class="form__check">
+              <input type="checkbox" id="agree" name="agree">
+              <label for="agree">Согласен на обработку персональных данных *</label>
+            </div>
+            <div class="form__error"></div>
+          </div>
+          <button type="submit" class="btn">Отправить заявку</button>
+          <div class="form__success" id="form-success">Спасибо! Заявка отправлена, мы скоро свяжемся с вами.</div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <h3>МеталлПро</h3>
+          <p>Изготовление и монтаж ворот, навесов, ограждений и других металлоконструкций в Минске и по всей Беларуси.</p>
+        </div>
+        <div>
+          <h3>Разделы</h3>
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="portfolio.html">Портфолио</a></li>
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Контакты</h3>
+          <ul>
+            <li><a href="tel:+375291234567">+375 (29) 123-45-67</a></li>
+            <li><a href="mailto:info@metallpro.by">info@metallpro.by</a></li>
+            <li>г. Минск, ул. Заводская, 15</li>
+            <li>Пн–Сб: 9:00–19:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">© <span id="year">2026</span> МеталлПро. УНП 123456789. Учебный проект.</div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

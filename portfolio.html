@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Фотогалерея выполненных работ: ворота, навесы, ограждения, ковка">
+  <title>Портфолио — МеталлПро</title>
+  <link rel="icon" href="images/hero.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">Металл<span>Про</span></a>
+      <nav class="nav" id="nav" aria-label="Главное меню">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">Главная</a></li>
+          <li><a class="nav__link" href="services.html">Услуги</a></li>
+          <li><a class="nav__link active" href="portfolio.html">Портфолио</a></li>
+          <li><a class="nav__link" href="about.html">О компании</a></li>
+          <li><a class="nav__link" href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <a href="tel:+375291234567" class="header__phone">+375 (29) 123-45-67</a>
+      <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-head"><div class="container"><h1>Портфолио</h1><p>Примеры выполненных работ. Нажмите на фото, чтобы увеличить</p></div></div>
+    <section class="section">
+      <div class="container">
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">Все</button>
+          <button class="filter-btn" data-filter="gates">Ворота</button>
+          <button class="filter-btn" data-filter="canopies">Навесы и козырьки</button>
+          <button class="filter-btn" data-filter="fences">Ограждения</button>
+          <button class="filter-btn" data-filter="forging">Ковка</button>
+        </div>
+        <div class="gallery">
+        <button class="gallery__item" data-cat="gates" data-full="images/gate-swing.svg" data-title="Распашные ворота с калиткой — Минский район">
+          <img src="images/gate-swing.png" alt="Распашные ворота с калиткой" width="800" height="600" loading="lazy">
+          <span class="gallery__caption"><strong>Распашные ворота с калиткой</strong><br><small>Минский район</small></span>
+        </button>
+        <button class="gallery__item" data-cat="gates" data-full="images/gate-sliding.svg" data-title="Откатные ворота с автоматикой — г. Заславль">
+          <img src="images/gate-sliding.png" alt="Откатные ворота с автоматикой" width="800" height="600" loading="lazy">
+          <span class="gallery__caption"><strong>Откатные ворота с автоматикой</strong><br><small>г. Заславль</small></span>
+        </button>
+        <button class="gallery__item" data-cat="canopies" data-full="images/canopy.svg" data-title="Навес на 2 автомобиля — г. Дзержинск">
+          <img src="images/canopy.png" alt="Навес на 2 автомобиля" width="800" height="600" loading="lazy">
+          <span class="gallery__caption"><strong>Навес на 2 автомобиля</strong><br><small>г. Дзержинск</small></span>
+        </button>
+        <button class="gallery__item" data-cat="fences" data-full="images/railing.svg" data-title="Лестничные перила — г. Минск">
+          <img src="images/railing.svg" alt="Лестничные перила" width="800" height="600" loading="lazy">
+          <span class="gallery__caption"><strong>Лестничные перила</strong><br><small>г. Минск</small></span>
+        </button>
+        <button class="gallery__item" data-cat="canopies" data-full="images/visor.svg" data-title="Козырёк над входом — г. Борисов">
+          <img src="images/visor.svg" alt="Козырёк над входом" width="800" height="600" loading="lazy">
+          <span class="gallery__caption"><strong>Козырёк над входом</strong><br><small>г. Борисов</small></span>
+        </button>
+        <button class="gallery__item" data-cat="forging" data-full="images/forged.svg" data-title="Кованые ворота — д. Ждановичи">
+          <img src="images/forged.svg" alt="Кованые ворота" width="800" height="600" loading="lazy">
+          <span class="gallery__caption"><strong>Кованые ворота</strong><br><small>д. Ждановичи</small></span>
+        </button>
+        </div>
+      </div>
+    </section>
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Просмотр изображения">
+      <button class="lightbox__btn lightbox__close" aria-label="Закрыть">&times;</button>
+      <button class="lightbox__btn lightbox__prev" aria-label="Предыдущее">&#10094;</button>
+      <img src="" alt="">
+      <p class="lightbox__caption"></p>
+      <button class="lightbox__btn lightbox__next" aria-label="Следующее">&#10095;</button>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <h3>МеталлПро</h3>
+          <p>Изготовление и монтаж ворот, навесов, ограждений и других металлоконструкций в Минске и по всей Беларуси.</p>
+        </div>
+        <div>
+          <h3>Разделы</h3>
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="portfolio.html">Портфолио</a></li>
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Контакты</h3>
+          <ul>
+            <li><a href="tel:+375291234567">+375 (29) 123-45-67</a></li>
+            <li><a href="mailto:info@metallpro.by">info@metallpro.by</a></li>
+            <li>г. Минск, ул. Заводская, 15</li>
+            <li>Пн–Сб: 9:00–19:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">© <span id="year">2026</span> МеталлПро. УНП 123456789. Учебный проект.</div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
